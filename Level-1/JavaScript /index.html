@@ -114,45 +114,73 @@
         <section id="modals" class="section">
             <div class="container">
                 <h2>Interactive Modals</h2>
-
                 <div class="demo-grid">
                     <!-- Basic Modal -->
                     <div class="demo-card">
                         <h3>Basic Modal</h3>
                         <button class="btn btn-primary" id="openBasicModal">Open Basic Modal</button>
                     </div>
-
+        
                     <!-- Confirmation Modal -->
                     <div class="demo-card">
                         <h3>Confirmation Modal</h3>
                         <button class="btn btn-danger" id="openConfirmModal">Delete Item</button>
                         <p class="modal-result" id="confirmResult"></p>
                     </div>
-
+        
                     <!-- Form Modal -->
                     <div class="demo-card">
                         <h3>Form Modal</h3>
                         <button class="btn btn-success" id="openFormModal">Add User</button>
                         <div class="user-list" id="userList"></div>
                     </div>
-
+        
                     <!-- Image Gallery Modal -->
                     <div class="demo-card">
                         <h3>Image Gallery</h3>
                         <div class="image-gallery">
-                            <img src="/placeholder.svg?height=100&width=100" alt="Image 1" class="gallery-thumb"
-                                data-full="/placeholder.svg?height=400&width=600">
-                            <img src="/placeholder.svg?height=100&width=100" alt="Image 2" class="gallery-thumb"
-                                data-full="/placeholder.svg?height=400&width=600">
-                            <img src="/placeholder.svg?height=100&width=100" alt="Image 3" class="gallery-thumb"
-                                data-full="/placeholder.svg?height=400&width=600">
-                            <img src="/placeholder.svg?height=100&width=100" alt="Image 4" class="gallery-thumb"
-                                data-full="/placeholder.svg?height=400&width=600">
+                            <img src="Images/img-1.avif?height=100&width=100" alt="Image 1" class="gallery-thumb"
+                                data-full="Images/img-1.avif?height=400&width=600">
+                            <img src="Images/img-2.avif?height=100&width=100" alt="Image 2" class="gallery-thumb"
+                                data-full="Images/img-2.avif?height=400&width=600">
+                            <img src="Images/img-3.avif?height=100&width=100" alt="Image 3" class="gallery-thumb"
+                                data-full="Images/img-3.avif?height=400&width=600">
+                            <img src="Images/img-4.avif?height=100&width=100" alt="Image 4.avif" class="gallery-thumb"
+                                data-full="Images/img-4?height=400&width=600">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
+        <!-- Modal Templates -->
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal" id="modal">
+                <div class="modal-header">
+                    <h3 id="modalTitle">Modal Title</h3>
+                    <button class="modal-close" id="modalClose">&times;</button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <!-- Dynamic content will be inserted here -->
+                </div>
+                <div class="modal-footer" id="modalFooter">
+                    <!-- Dynamic footer content will be inserted here -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Image Modal Template -->
+        <div class="modal-overlay" id="imageModalOverlay">
+            <div class="modal image-modal" id="imageModal">
+                <div class="modal-header">
+                    <h3>Image Viewer</h3>
+                    <button class="modal-close" id="imageModalClose">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="Images/placeholder.jpg" alt="Full size image">
+                </div>
+            </div>
+        </div>
 
         <!-- Forms Section -->
         <section id="forms" class="section">
